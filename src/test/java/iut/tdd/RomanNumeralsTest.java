@@ -17,4 +17,21 @@ public class RomanNumeralsTest {
 		Assert.assertEquals(expected, actual);
 	}
 	
+	@Test
+	public void sould_return_V_when_5 (){
+		//Given
+		String input = "5";
+		String expected = "V";
+		RomanNumerals romanNumeral = new RomanNumerals();
+		//When
+		String actual = romanNumeral.convertToRoman(input);
+		//Then
+		Assert.assertEquals(expected, actual);
+	}
+	
+	
+	/*@Test
+	public void sould_return_X_when_10 (){
+		
+	}*/
 }
